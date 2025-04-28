@@ -47,8 +47,7 @@ function Genre() {
                 {books.map((book) => (
                     <div key={book.id}>
                         <p>ID: {book.id}</p>
-                        <p>Title: {book.title}</p>
-                        <Link to={`/book/${book.id}`}>{book.title}</Link>
+                        <p>Title: <Link to={`/book/${book.id}`}>{book.title}</Link></p>
                         <p>Synopsis: {book.synopsis}</p>
                         <p>Author: {book.author.first_name} {book.author.last_name}</p>
                     </div>
